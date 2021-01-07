@@ -1,0 +1,253 @@
+@import url(https://fonts.googleapis.com/css?family=Signika:300,regular,500,600,700);
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Signika", sans-serif;
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 1.4;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+h1 {
+  font-size: var(--header-one);
+  color: var(--primary-color);
+  margin-bottom: 1.2rem;
+}
+
+h2 {
+  font-size: var(--header-two);
+}
+
+h2,
+h3,
+h4 {
+  font-weight: 300;
+  color: var(--black);
+  margin-bottom: 1.6rem;
+}
+
+li {
+  list-style: none;
+}
+
+section {
+  margin-bottom: 10rem;
+}
+
+input {
+  border: none;
+}
+
+input:focus {
+  outline: none;
+  border: none;
+}
+
+#main-block {
+  position: relative;
+}
+
+:root {
+  --primary-color: #0d65f8;
+  --secondary-color: #f6da9f;
+  --tertiary-color: #2abfb5;
+  --neutral-color: #f1f6f9;
+  --white: #fff;
+  --black: #000;
+  --btn-gradient: linear-gradient(
+    180deg,
+    rgba(246, 218, 159, 1) 0%,
+    rgba(239, 194, 92, 1) 100%
+  );
+  --header-one: 6rem;
+  --header-two: 4.5rem;
+  --paragraph: 1.6rem;
+  --box-shadow: 0 3px 5px rgba($color: #929292, $alpha: 0.16);
+  --border: 1px solid #c7c7c7 ;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.flex-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.grid-hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+}
+
+.head {
+  border: 1px solid #bfbfbf;
+  box-shadow: var(--box-shadow);
+  padding: 1.5rem 0;
+}
+.head__logo {
+  display: flex;
+  align-items: center;
+  width: 10rem;
+  height: 6rem;
+  cursor: pointer;
+}
+.head__nav {
+  width: 50%;
+  font-weight: 300;
+}
+.head__nav--list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.head__nav--item:not(:last-child) {
+  margin-right: 2.5rem;
+}
+.head__cta {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+.head__cta--country {
+  margin-right: 2.5rem;
+  padding: 0 3.3rem;
+  border-color: #aaaaaa;
+}
+.head__cta--country option {
+  padding: 1rem;
+}
+
+.hero {
+  padding-top: 10rem;
+}
+.hero__left--search {
+  display: flex;
+  align-items: center;
+}
+.hero__left--search input {
+  width: 70%;
+  padding: 1.7rem 3rem;
+  background-color: var(--neutral-color);
+  border: var(--border);
+  box-shadow: var(--box-shadow);
+  margin-right: 2rem;
+}
+.hero p {
+  margin-top: 1.2rem;
+  color: rgba(0, 0, 0, 0.3);
+}
+.hero__right {
+  background: url("../app/images/2253648.jpg") no-repeat center center/cover;
+}
+
+.products__trow--sort {
+  padding: 1.7rem 2rem;
+}
+.products__trow--nav {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+.products__trow--nav-item {
+  font-weight: 300;
+  position: relative;
+  padding: 1.2rem 0;
+}
+.products__trow--nav-item:not(:last-child) {
+  margin-right: 2.5rem;
+}
+.products__trow--filter {
+  cursor: pointer;
+  border: var(--border);
+  padding: 1.8rem 2rem;
+}
+.products__brow {
+  margin-top: 7.4rem;
+}
+.products__brow--card {
+  padding-bottom: 1.6rem;
+  border: var(--border);
+  box-shadow: var(--box-shadow);
+  width: 25.6rem;
+  height: 35.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+.products__brow--card::after {
+  content: "Best Price";
+  position: absolute;
+  right: 0.7rem;
+  top: 1.2rem;
+  width: 8.8rem;
+  height: 2.9rem;
+  background-color: #2abfb5;
+  border-radius: 5rem;
+  font-size: 1.4rem;
+  color: var(--white);
+  display: grid;
+  place-items: center;
+}
+.products__brow--card img {
+  margin-bottom: 2rem;
+}
+.products__brow--card s {
+  margin-bottom: 1.6rem;
+}
+
+.btn {
+  padding: 1.4rem 3.3rem;
+  background: var(--btn-gradient);
+  color: var(--black);
+  border-radius: 1rem;
+  border: 1px solid #976900;
+}
+
+.selected {
+  font-weight: 700;
+}
+.selected::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.5rem;
+  background-color: #e47911;
+}
+
+/*# sourceMappingURL=main.css.map */

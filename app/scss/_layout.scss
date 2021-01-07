@@ -1,0 +1,21 @@
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.flex-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.grid-hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+}

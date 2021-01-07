@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Price.io</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="head">
+      <div class="container flex-header">
+        <div class="head__logo">
+          <img src="app/images/logo.png" alt="" />
+        </div>
+        <div class="head__nav">
+          <ul class="head__nav--list">
+            <li class="head__nav--item">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="head__nav--item">
+              <a href="#">Trending Price Drops</a>
+            </li>
+            <li class="head__nav--item">
+              <a href="#">Popular Products</a>
+            </li>
+          </ul>
+        </div>
+        <div class="head__cta">
+          <select class="head__cta--country">
+            <option value="United States">Amazon U.S</option>
+            <option value="United Kingdom">Amazon U.K</option>
+          </select>
+          <a href="#" class="btn">Sign Up</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <main id="main-block">
+        <!-- Hero -->
+        <section class="hero grid-hero">
+          <div class="hero__left">
+            <h1 class="hero__header">
+              Get Instant E-mail Notifications When Amazon Prices Drop.
+            </h1>
+            <form class="hero__left--search">
+              <input
+                type="text"
+                placeholder="Enter Product URL (https://www.amazon.com/Fujifilm-Instax-SP-3-Mobi...)"
+              />
+              <a href="#" class="btn">Search</a>
+            </form>
+            <p>* You can also search via Keyword (i.e. Apple Airpods Pro)</p>
+          </div>
+          <div class="hero__right"></div>
+        </section>
+
+        <!-- Products -->
+        <section class="products">
+          <div class="products__trow flex-header">
+            <select class="products__trow--sort">
+              <option value="best-price">Best Price</option>
+            </select>
+            <div class="products__trow--nav">
+              <a class="products__trow--nav-item selected" href="#"
+                >Amazon US</a
+              >
+              <a class="products__trow--nav-item" href="#">Amazon UK</a>
+              <a class="products__trow--nav-item" href="#">Amazon Canada</a>
+              <a class="products__trow--nav-item" href="#">Amazon India</a>
+            </div>
+            <div class="products__trow--filter">
+              <i class="fas fa-filter"></i>
+            </div>
+          </div>
+          <div class="products__brow grid-products">
+            <div class="products__brow--card">
+              <img src="app/images/product-1.png" alt="" />
+              <h3>Apple MacBook Pro 13' 2.4 Ghz - 8 GB RAM</h3>
+              <b>$859.99</b>
+              <s>$1099.99</s>
+              <a href="#" class="btn">Buy Now</a>
+            </div>
+            <div class="products__brow--card">
+              <img src="app/images/product-2.png" alt="" />
+              <h3>Roland F-20 88 Weighted Digital Piano</h3>
+              <b>$430.99</b>
+              <s>$489.99</s>
+              <a href="#" class="btn">Buy Now</a>
+            </div>
+            <div class="products__brow--card">
+              <img src="app/images/product-3.png" alt="" />
+              <h3>Alienware m17 R3 17.7 Inch Gaming Laptop</h3>
+              <b>$2499.99</b>
+              <s>$2699.99</s>
+              <a href="#" class="btn">Buy Now</a>
+            </div>
+            <div class="products__brow--card">
+              <img src="app/images/product-4.png" alt="" />
+              <h3>JBL Boombox - Waterproof Portable Speaker</h3>
+              <b>$499.99</b>
+              <s>$505.99</s>
+              <a href="#" class="btn">Buy Now</a>
+            </div>
+            <div class="products__brow--card">
+              <img src="app/images/product-5.png" alt="" />
+              <h3>ELAC Debut 2.0 SUB3010 400 Watt - Black</h3>
+              <b>$459.99</b>
+              <s>$579.99</s>
+              <a href="#" class="btn">Buy Now</a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="app/js/app.js"></script>
+  </body>
+</html>

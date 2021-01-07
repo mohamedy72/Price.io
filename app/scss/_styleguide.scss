@@ -1,0 +1,27 @@
+:root {
+  // Colors
+  --primary-color: #0d65f8;
+  --secondary-color: #f6da9f;
+  --tertiary-color: #2abfb5;
+  --neutral-color: #f1f6f9;
+
+  --white: #fff;
+  --black: #000;
+
+  --btn-gradient: linear-gradient(
+    180deg,
+    rgba(246, 218, 159, 1) 0%,
+    rgba(239, 194, 92, 1) 100%
+  );
+
+  // Fonts
+  --header-one: 6rem;
+  --header-two: 4.5rem;
+  --paragraph: 1.6rem;
+
+  // Box Shadow
+  --box-shadow: 0 3px 5px rgba($color: #929292, $alpha: 0.16);
+
+  // Borders
+  --border: 1px solid #c7c7c7
+}

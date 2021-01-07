@@ -1,0 +1,157 @@
+.head {
+  border: 1px solid #bfbfbf;
+  box-shadow: var(--box-shadow);
+  padding: 1.5rem 0;
+  &__logo {
+    display: flex;
+    align-items: center;
+    width: 10rem;
+    height: 6rem;
+    cursor: pointer;
+  }
+
+  &__nav {
+    width: 50%;
+    font-weight: 300;
+    &--list {
+      @include flex-centered;
+      align-items: center;
+    }
+    &--item {
+      &:not(:last-child) {
+        margin-right: 2.5rem;
+      }
+    }
+  }
+
+  &__cta {
+    width: 30%;
+    @include flex-centered;
+
+    &--country {
+      margin-right: 2.5rem;
+      padding: 0 3.3rem;
+      border-color: #aaaaaa;
+      & option {
+        padding: 1rem;
+      }
+    }
+  }
+}
+
+.hero {
+  padding-top: 10rem;
+  &__left {
+    &--search {
+      display: flex;
+      align-items: center;
+    }
+    &--search input {
+      width: 70%;
+      padding: 1.7rem 3rem;
+      background-color: var(--neutral-color);
+      border: var(--border);
+      box-shadow: var(--box-shadow);
+      margin-right: 2rem;
+    }
+  }
+
+  & p {
+    margin-top: 1.2rem;
+    color: rgba($color: #000000, $alpha: 0.3);
+  }
+
+  &__right {
+    background: url("../app/images/2253648.jpg") no-repeat center center/cover;
+  }
+}
+
+.products {
+  &__trow {
+    &--sort {
+      padding: 1.7rem 2rem;
+    }
+
+    &--nav {
+      width: 60%;
+      @include flex-centered;
+
+      &-item {
+        font-weight: 300;
+        position: relative;
+        padding: 1.2rem 0;
+        &:not(:last-child) {
+          margin-right: 2.5rem;
+        }
+      }
+    }
+    &--filter {
+      cursor: pointer;
+      border: var(--border);
+      padding: 1.8rem 2rem;
+    }
+  }
+
+  &__brow {
+    margin-top: 7.4rem;
+    &--card {
+      padding-bottom: 1.6rem;
+      border: var(--border);
+      box-shadow: var(--box-shadow);
+      width: 25.6rem;
+      height: 35.5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      border-radius: 0.5rem;
+      text-align: center;
+      &::after {
+        content: "Best Price";
+        position: absolute;
+        right: 0.7rem;
+        top: 1.2rem;
+        width: 8.8rem;
+        height: 2.9rem;
+        background-color: #2abfb5;
+        border-radius: 5rem;
+        font-size: 1.4rem;
+        color: var(--white);
+        display: grid;
+        place-items: center;
+      }
+
+      & img {
+        margin-bottom: 2rem;
+      }
+
+      & s {
+        margin-bottom: 1.6rem;
+      }
+    }
+  }
+}
+
+.btn {
+  padding: 1.4rem 3.3rem;
+  background: var(--btn-gradient);
+  color: var(--black);
+  border-radius: 1rem;
+  border: 1px solid #976900;
+}
+
+.selected {
+  font-weight: 700;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.5rem;
+    background-color: #e47911;
+  }
+}
