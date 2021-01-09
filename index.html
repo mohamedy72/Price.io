@@ -47,14 +47,16 @@
             <h1 class="hero__header">
               Get Instant E-mail Notifications When Amazon Prices Drop.
             </h1>
-            <form class="hero__left--search">
+            <form class="hero__left--search form-container">
               <input
                 type="text"
                 placeholder="Enter Product URL (https://www.amazon.com/Fujifilm-Instax-SP-3-Mobi...)"
               />
               <a href="#" class="btn">Search</a>
             </form>
-            <p>* You can also search via Keyword (i.e. Apple Airpods Pro)</p>
+            <p class="disclaimer">
+              * You can also search via Keyword (i.e. Apple Airpods Pro)
+            </p>
           </div>
           <div class="hero__right"></div>
         </section>
@@ -115,7 +117,65 @@
             </div>
           </div>
         </section>
+
+        <!-- Newsletter -->
+        <section id="signup" class="newsletter flex-newsletter border-round">
+          <div class="newsletter__left">
+            <h2>
+              Want to get notified when any product receives a price drop?
+            </h2>
+            <form class="newsletter__left--signup form-container">
+              <input type="text" placeholder="Enter Your Email" />
+              <a href="#" class="btn">Signup</a>
+            </form>
+            <p class="disclaimer">
+              * No spam, ever. Only receive price drop notifications.
+            </p>
+          </div>
+          <div class="newsletter__right">
+            <img src="app/images/newsletter-image.png" alt="" />
+          </div>
+        </section>
       </main>
+
+      <footer class="footer grid-footer">
+        <div class="footer__logo">
+          <img src="app/images/logo-notext.png" alt="" /> &copy; 2020
+        </div>
+        <ul class="footer__nav">
+          <h4>Price.io</h4>
+          <li class="footer__nav--item"><a href="index.html">Home</a></li>
+          <li class="footer__nav--item">
+            <a href="#">Trending Price Drops</a>
+          </li>
+          <li class="footer__nav--item"><a href="#">Popular Products</a></li>
+        </ul>
+        <ul class="footer__nav">
+          <h4>Amazon Store Selector</h4>
+          <li class="footer__nav--item"><a href="$">Amazon US</a></li>
+          <li class="footer__nav--item"><a href="#">Amazon UK</a></li>
+          <li class="footer__nav--item"><a href="#">Amazon Canada</a></li>
+          <li class="footer__nav--item"><a href="#">Amazon India</a></li>
+        </ul>
+        <ul class="footer__nav">
+          <h4>Hotlinks</h4>
+          <li class="footer__nav--item"><a href="#signup">Sign Up</a></li>
+          <li class="footer__nav--item"><a href="#">Sign In</a></li>
+          <li class="footer__nav--item"><a href="#">Support</a></li>
+        </ul>
+        <ul class="footer__nav">
+          <h4>Personal</h4>
+          <li class="footer__nav--item"><a href="#">Dashboard</a></li>
+        </ul>
+        <ul class="footer__nav">
+          <h4>Follow Us On</h4>
+          <div class="icons">
+            <li class="footer__nav--item"><i class="fab fa-facebook"></i></li>
+            <li class="footer__nav--item"><i class="fab fa-instagram"></i></li>
+            <li class="footer__nav--item"><i class="fab fa-twitter"></i></li>
+          </div>
+        </ul>
+      </footer>
     </div>
     <script src="app/js/app.js"></script>
   </body>

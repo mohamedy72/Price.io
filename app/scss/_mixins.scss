@@ -2,3 +2,15 @@
   display: flex;
   justify-content: center;
 }
+
+@mixin md($breakP) {
+  @if ($breakP == phone) {
+    @media (max-width: 54rem) {
+      @content;
+    }
+  } @else if($breakP == tablet) {
+    @media (max-width: 76.8rem) {
+      @content;
+    }
+  }
+}

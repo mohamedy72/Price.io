@@ -1,3 +1,4 @@
+// Header Section
 .head {
   border: 1px solid #bfbfbf;
   box-shadow: var(--box-shadow);
@@ -39,32 +40,16 @@
   }
 }
 
+// Hero Section
+
 .hero {
   padding-top: 10rem;
-  &__left {
-    &--search {
-      display: flex;
-      align-items: center;
-    }
-    &--search input {
-      width: 70%;
-      padding: 1.7rem 3rem;
-      background-color: var(--neutral-color);
-      border: var(--border);
-      box-shadow: var(--box-shadow);
-      margin-right: 2rem;
-    }
-  }
-
-  & p {
-    margin-top: 1.2rem;
-    color: rgba($color: #000000, $alpha: 0.3);
-  }
-
   &__right {
     background: url("../app/images/2253648.jpg") no-repeat center center/cover;
   }
 }
+
+// Products Section
 
 .products {
   &__trow {
@@ -133,25 +118,61 @@
   }
 }
 
-.btn {
-  padding: 1.4rem 3.3rem;
-  background: var(--btn-gradient);
-  color: var(--black);
-  border-radius: 1rem;
-  border: 1px solid #976900;
+// News Letter
+.newsletter {
+  background-color: var(--primary-color);
+  padding: 3.5rem 4rem;
+
+  h2 {
+    color: var(--white);
+  }
+  p {
+    color: #79abfe;
+  }
+
+  &__right {
+    flex: 1 1 90%;
+    img {
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: contain;
+    }
+  }
 }
 
-.selected {
-  font-weight: 700;
+// Footer
+.footer {
+  &__logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 
-  &::after {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 0.5rem;
-    background-color: #e47911;
+    img {
+      margin-bottom: 0.8rem;
+      margin-right: auto;
+      object-fit: contain;
+    }
+  }
+  &__nav {
+    h4 {
+      margin-bottom: 0.8rem;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    &--item {
+      margin-bottom: 0.8rem;
+    }
+
+    &:last-of-type {
+      & .icons {
+        display: flex;
+
+        li {
+          margin-right: 1rem;
+          cursor: pointer;
+        }
+      }
+    }
   }
 }

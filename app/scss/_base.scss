@@ -35,17 +35,16 @@ h1 {
 }
 h2 {
   font-size: var(--header-two);
+  font-weight: 700;
+  margin-bottom: 2rem;
 }
 
-h2,
 h3,
 h4 {
   font-weight: 300;
   color: var(--black);
   margin-bottom: 1.6rem;
 }
-
-
 
 li {
   list-style: none;

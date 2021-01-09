@@ -1,0 +1,46 @@
+.btn {
+  padding: 1.4rem 3.3rem;
+  background: var(--btn-gradient);
+  color: var(--black);
+  border-radius: 1rem;
+  border: 1px solid #976900;
+}
+
+.selected {
+  font-weight: 700;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.5rem;
+    background-color: #e47911;
+  }
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+
+  & input {
+    width: 70%;
+    padding: 1.7rem 3rem;
+    background-color: var(--neutral-color);
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    margin-right: 2rem;
+  }
+}
+
+.disclaimer {
+  margin-top: 1.2rem;
+  color: rgba($color: #000000, $alpha: 0.3);
+}
+
+// Border Radius
+.border-round {
+  border-radius: 5px;
+}
